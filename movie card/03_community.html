@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="01_nav_footer.css" />
+		<link rel="stylesheet" href="03_community.css" />
+
+		<title>Community</title>
+	</head>
+	<body>
+		<!-- 01_nav_footer.html -->
+		<!-- 01_nav_footer 에서 완성한 Navigation bar 코드를 붙여넣어 주세요. -->
+		<nav
+			class="
+				navbar navbar-expand-md navbar-dark
+				bg-dark
+				sticky-sm-top
+				p-0
+			"
+		>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="02_home.html"
+					><img class="img-fluid navbar__img" src="/images/logo.png"
+				/></a>
+				<button
+					class="navbar-toggler border-0"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse flex-row-reverse"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav align-items-end">
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="02_home.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="03_community.html"
+								>Community</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								data-bs-toggle="modal"
+								href="#staticBackdrop"
+							>
+								Login
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="staticBackdrop"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="staticBackdropLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">
+							Login
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="my-2">
+								<label class="d-flex fw-bold my-2" for="name"
+									>Username</label
+								>
+								<input
+									class="d-flex w-100"
+									type="text"
+									id="name"
+									required
+								/>
+							</div>
+							<div class="my-2">
+								<label class="d-flex fw-bold my-2" for="pwd"
+									>Password</label
+								>
+								<input
+									class="d-flex w-100"
+									type="password"
+									id="pwd"
+									required
+								/>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+						<button type="button" class="btn btn-primary">
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 03_community.html -->
+		<div class="main">
+			<h1 class="d-flex justify-content-center m-5">Community</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<!-- Sidebar -->
+					<aside class="list-group col-lg-2 col-12 p-0">
+						<ul class="p-2">
+							<a
+								href="#"
+								class="
+									d-flex
+									justify-content-center
+									list-group-item list-group-item-action
+									active
+								"
+								aria-current="true"
+							>
+								Boxoffice
+							</a>
+							<a
+								href="#"
+								class="
+									d-flex
+									justify-content-center
+									list-group-item list-group-item-action
+								"
+								>Movies</a
+							>
+							<a
+								href="#"
+								class="
+									d-flex
+									justify-content-center
+									list-group-item list-group-item-action
+								"
+								>Genres</a
+							>
+							<a
+								href="#"
+								class="
+									d-flex
+									justify-content-center
+									list-group-item list-group-item-action
+								"
+								>Actors</a
+							>
+						</ul>
+					</aside>
+
+					<!-- Board -->
+					<section
+						class="d-none d-lg-block d-xl-block d-xxl-block col-10"
+					>
+						<div>
+							<table class="table table-dark table-striped">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">글 제목</th>
+										<th scope="col">영화 제목</th>
+										<th scope="col">사용자 id</th>
+										<th scope="col">작성시간</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>명작!</td>
+										<td>조커</td>
+										<td>Otto</td>
+										<td>1minutes ago</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>졸았음</td>
+										<td>조커</td>
+										<td>jacob</td>
+										<td>1minutes ago</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="d-flex justify-content-center">
+							<nav aria-label="Page navigation example">
+								<ul class="pagination m-0">
+									<li class="page-item disabled">
+										<a class="page-link" href="#"
+											>Previous</a
+										>
+									</li>
+									<li class="page-item active">
+										<a class="page-link" href="#">1</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">2</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">3</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">Next</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</section>
+
+					<section
+						class="d-block d-lg-none d-xl-none d-xxl-none col-12"
+					>
+						<ul class="list-group list-group-flush m-3">
+							<li class="list-group-item">
+								<div class="fw-bold bg-light p-2 ps-3">
+									굿 무비
+								</div>
+								<div class="ms-4 p-2">wow!</div>
+								<div
+									class="
+										d-flex
+										justify-content-around
+										p-2
+										mt-2
+										bg-light
+									"
+								>
+									<div>jacob</div>
+									<div>1minutes ago</div>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="fw-bold bg-light p-2 ps-3">굿!</div>
+								<div class="ms-4 p-2">awesome!</div>
+								<div
+									class="
+										d-flex
+										justify-content-around
+										p-2
+										mt-2
+										bg-light
+									"
+								>
+									<div>tom</div>
+									<div>1minutes ago</div>
+								</div>
+							</li>
+						</ul>
+						<div class="d-flex justify-content-center">
+							<nav aria-label="Page navigation example">
+								<ul class="pagination m-0">
+									<li class="page-item disabled">
+										<a class="page-link" href="#"
+											>Previous</a
+										>
+									</li>
+									<li class="page-item active">
+										<a class="page-link" href="#">1</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">2</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">3</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">Next</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<!-- 01_nav_footer.html -->
+		<!-- 01_nav_footer 에서 완성한 Footer 코드를 붙여넣어 주세요. -->
+		<div class="d-flex justify-content-center fixed-bottom bg-white py-1">
+			Web-bootstrap PJT, by dohyun
+		</div>
+		<!-- Bootstrap JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
